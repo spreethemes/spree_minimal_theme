@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_minimal_theme'
   s.version     = '1.1.0'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Minimal Theme for the spree ecommerce rails application.'
+  s.description = 'Minimal Theme for the spree ecommerce rails application created by Spreethemes.com.'
   s.required_ruby_version = '>= 1.8.7'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  # s.author    = 'Spreethemes.com'
+  # s.email     = 'support@spreethemes.com'
+  # s.homepage  = 'http://www.spreethemes.com'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
