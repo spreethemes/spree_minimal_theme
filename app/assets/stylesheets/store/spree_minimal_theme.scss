@@ -13,15 +13,41 @@ body {
 	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.s_item:hover {
-z-index: 10;
-padding: 20px !important;
-background: white;
-border-radius: 5px;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-box-shadow: 0 0 30px rgba(0,0,0,0.3);
--o-box-shadow: 0 0 30px rgba(0,0,0,0.3);
--moz-box-shadow: 0 0 30px rgba(0,0,0,0.3);
--webkit-box-shadow: 0 0 30px rgba(0,0,0,0.3);
+.list-item {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.list-item:hover {
+  margin: -20px -10px -30px -10px;
+}
+ .list-item h3 a {
+  display: block;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+.list-item:hover h3 a {
+  border-top: 1px solid #ccc;
+}
+
+
+.list-item div.product-image {
+	height: 120px;
+}
+.list-item {padding:20px 0;border-bottom:1px solid #eee}
+
+.list-item:hover {
+	z-index: 10;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	-o-box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.pagination {
+	clear: both
 }
