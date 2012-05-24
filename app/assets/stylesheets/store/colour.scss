@@ -1,0 +1,57 @@
+
+// Main colour Block for the whole website.
+$primary: #000000; // Headers, promanent elements,
+$secondary: #333333; // Links.
+$tertiary: #666666; // Text.
+$quaternary: #888888;
+$quinary: #999999;
+
+// Event handling colours.
+$success: #c4df9b;
+$notice: #f7e0a5;
+$warning: #fbaf5d;
+$error: #9e0b0f;
+
+// Lighten all main colours.
+$primary-lighter: lighten($primary, 20%);
+$secondary-lighter: lighten($secondary, 20%);
+$tertiary-lighter: lighten($tertiary, 20%);
+$quaternary-lighter: lighten($quaternary, 20%);
+$quinary-lighter: lighten($quinary, 20%);
+
+// Darken all main colours.
+$primary-darker: darken($primary, 20%);
+$secondary-darker: darken($secondary, 20%);
+$tertiary-darker: darken($tertiary, 20%);
+$quaternary-darker: darken($quaternary, 20%);
+$quinary-darker: darken($quinary, 20%);
+
+// Gradient mixin for all colours.
+@mixin gradient($name, $colour1, $colour2) {
+  background: url( #{$name}-gradient-fallback.png ) repeat-x $colour1;
+  background: -moz-radial-gradient(center, ellipse cover, $colour1 22%, $colour2 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(22%, $colour1), color-stop(100%, $colour2));
+  background: -webkit-radial-gradient(center, ellipse cover, $colour1 22%, $colour2 100%);
+  background: -o-radial-gradient(center, ellipse cover, $colour1 22%, $colour2 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $colour1 22%, $colour2 100%);
+  background: radial-gradient(center, ellipse cover, $colour1 22%, $colour2 100%);
+}
+
+body {
+	color: $tertiary;
+	@include gradient(primary, $primary, $primary-darker);
+}
+
+// Links
+a {
+	color: $secondary;
+	&:hover, &:focus {
+		color: $secondary-lighter;
+	}
+}
+
+// Headers
+h1,h2,h3,h4,h5,h6 {
+
+}
+
