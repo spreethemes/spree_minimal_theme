@@ -1,10 +1,16 @@
-@import 'colour';
+@import 'reset';
+@import 'grid';
+@import 'colours';
+@import 'mixins';
+@import 'fonts';
 
 body {
 	color: $tertiary;
 	padding-top: 30px;
 	@include quinary-gradient;
-
+	font: {
+		family: "Lato", arial, sans-serif;
+	}
 }
 
 // Links
@@ -22,13 +28,32 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .container {
-	margin-top: 30px;
+	width: 960px;
+	margin: 30px auto;
 	background: #ffffff;
-	padding: 20px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
-	-o-box-shadow: 0 0 20px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	@include box-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+	overflow: hidden;
+}
+
+#header {
+	@include column(12);
+}
+
+#wrapper {
+	@include column(12);
+}
+
+#content {
+	@include column(9);
+}
+
+#sidebar {
+	@include column(3);
+}
+
+
+#logo {
+	display: inline;
 }
 
 .list-item {
@@ -57,13 +82,8 @@ h1,h2,h3,h4,h5,h6 {
 	z-index: 10;
 	padding: 20px;
 	background: white;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	box-shadow: 0 0 30px rgba(0,0,0,0.3);
-	-o-box-shadow: 0 0 30px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 0 30px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	@include round-corners(5px);
+	@include box-shadow(0 0 30px rgba(0, 0, 0, 0.3));
 }
 
 .pagination {

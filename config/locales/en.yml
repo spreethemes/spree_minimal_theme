@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  welcome: "Welcome visitor you can"
+  or: "or"
+  create: "create an account"
+  logged: "You are logged in as "
