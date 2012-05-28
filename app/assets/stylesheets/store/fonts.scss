@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'LatoBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url('http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url('http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff') format('woff');
+}
+
+
+//Font Sizes
+$body: 0.8em;
+$h1: 2.2em;
+$h2: 2.0em;
+$h3: 1.8em;
+$h4: 1em;
+$h5: 1em;
+$h6: 1em;

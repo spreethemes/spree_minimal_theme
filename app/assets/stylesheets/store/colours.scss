@@ -1,0 +1,33 @@
+
+// Main colour Block for the whole website. These can be changed to how you see fit.
+$primary: #fc3a51;
+$secondary: #f5b349;
+$tertiary: #02AFE7;
+$quaternary: #d8f7ff;
+$quinary: #ffffff;
+
+// Other colours.
+$text: #02AFE7;
+$background: #B2EDFD;
+$block_headers: #ffffff;
+
+// Event handling colours.
+$success: #c4df9b;
+$notice: #f7e0a5;
+$warning: #fbaf5d;
+$error: #9e0b0f;
+
+// Lighten all main colours.
+$primary-lighter: lighten($primary, 20%);
+$secondary-lighter: lighten($secondary, 20%);
+$tertiary-lighter: lighten($tertiary, 20%);
+$quaternary-lighter: lighten($quaternary, 20%);
+$quinary-lighter: lighten($quinary, 20%);
+
+// Darken all main colours.
+$primary-darker: darken($primary, 20%);
+$secondary-darker: darken($secondary, 20%);
+$tertiary-darker: darken($tertiary, 20%);
+$quaternary-darker: darken($quaternary, 20%);
+$quinary-darker: darken($quinary, 20%);
+

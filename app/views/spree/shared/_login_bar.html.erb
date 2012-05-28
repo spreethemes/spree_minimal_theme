@@ -1,0 +1,5 @@
+<% if current_user %>
+  <li><%= t(:logged) %><%= link_to current_user.email, spree.account_path %> ( <strong><%= link_to t(:logout), spree.destroy_user_session_path %></strong> )</li>
+<% else %>
+  <li id="link-to-login"><%= t(:welcome) %><%= link_to t(:login), spree.login_path %> <%= t(:or) %><%= link_to t(:create_a_new_account), spree.signup_path %></li>
+<% end %>
